@@ -1,0 +1,4 @@
+/    /taha.html    200
+/old-page    /new-page    302
+/about       /about-us    302
+/blog/*      /new-blog/:splat    302
