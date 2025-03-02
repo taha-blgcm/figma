@@ -9,6 +9,7 @@
 body{
 overflow-x: hidden;
 width: 100%;
+margin-right: -20px;
 }
 header {
   max-width: 100%;
@@ -310,6 +311,7 @@ p {
 
   .btns {
     width: 200px;
+    
   }
 }
 
@@ -452,12 +454,120 @@ h6{
   .section2{
     margin: 0;
   }
+}
+.container4{
+  width: 90%;
+  height: 410px;
+  clip-path: polygon(20% 0, 80% 0%, 100% 0, 100% 80%, 80% 100%, 0 100%, 0% 80%, 0 20%);
+  background: rgba(70, 64, 222, 1);
+  margin-left:  40px;
+  display: flex;
+  justify-content: space-between;
+}
+.first{
+  display: flex;
+  flex-direction: column;
+  align-items: space-evenly;
+  justify-content: space-evenly;
+  width: 40%;
+  height: 230px;
+  margin-top: 70px;
+  margin-left: 130px;
+}
+.btn4{
+  color: rgba(70, 64, 222, 1);
+  background-color: whitesmoke;
+  font-weight: 500;
+  cursor: pointer;
+  width: 155px;
+  height: 50px;
+  gap: 10px;
+  padding-top: 12px;
+  padding-right: 24px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  border-radius: 4px;
+  border-style: none;
+  border-style: none;
+}
+.first p{
+  color: white;
+  margin-left: 7.3px;
+}
+.first h1{
+  color: white;
+  max-width: 380px;
+  font-size:48px;
+  font-weight: 550;
+  
 
-@keyframes smoothscroll{
-  0%{
-    transform: translateY(0);
+}
+.second{
+  background-image: url(/pic/company.png);
+  width: 50%;
+  height: 90%;
+  margin-top: 63px;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 1250px) {
+.container4{
+  clip-path: polygon(13% 0, 80% 0%, 100%
+   0, 100% 71%, 87% 100%, 0 
+   100%, 0% 80%, 0 30%);
+
+}
+.first{
+  margin-left: 200px;
+
+}
+.first h1{
+  font-size: 60px;
+
+}
+.first p{
+  font-size: large;
+}
+.first input{
+  width: 250px;
+  min-height: 60px;
+}
+.second{
+  margin-right: 4%;
+}
+  
+}
+@media screen and (max-width: 500px) {
+  .container4{
+    max-width: 500px;
+    height: 600px;
+    flex-wrap: wrap;
+      }
+  .first{
+    margin-left: 36px;
+    margin-top: 25px;
+    height: 40%;
   }
-  100%{
-    transform: translateY(-100%);
+  .first h1{
+    font-size: 30px;
+    width: 250px;
+    text-align: center;
+    margin-left: 0px;
+
   }
+  .first p{
+    width: 250px;
+  }
+  .first input{
+    width: 250px;
+  }
+
+  .second{
+    height: 50%;
+    width: 80%;
+    margin-top: 0%;
+    margin-left: 30px;
+  }
+
+
+  
 }
